@@ -16,4 +16,10 @@ public class CircleTest {
         Circle circle = new Circle(7);
         assertEquals(2 * Math.PI * 7, circle.getPerimeter(), 0.0001);
     }
+
+    @Test
+    public void Testsides() {
+        Circle circle = new Circle(7);
+        assertEquals(0, circle.numberOfSides(), 0.0001);
+    }
 }

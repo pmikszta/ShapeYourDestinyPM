@@ -30,4 +30,11 @@ public class SquareTest {
         assertEquals(9, square.getArea(), 0.0001);
         assertEquals(12, square.getPerimeter(), 0.0001);
     }
+
+    @Test
+    public void Testsides() {
+        Square square = new Square(5);
+        assertEquals(4, square.numberOfSides(), 0.0001);
+    }
+
 }

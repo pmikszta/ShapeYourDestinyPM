@@ -1,7 +1,7 @@
 package org.example;
 
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Polygon {
 
     //Private Varibales
     private double width;
@@ -12,7 +12,7 @@ public class Rectangle extends Shape {
         this.width = width;
         this.height = height;
     }
-    
+
     //Overrides from Shape
     @Override
     public double getArea() {
@@ -22,6 +22,11 @@ public class Rectangle extends Shape {
     @Override
     public double getPerimeter() {
          return 2 * (width + height);
+    }
+
+    @Override
+    public int numberOfSides() {
+        return 4;
     }
 
     // gettors and setters

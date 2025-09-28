@@ -17,4 +17,10 @@ public class IsoscelesRightTriangleTest {
         double expectedPerimeter = 5 + 5 + Math.sqrt(5*5 + 5*5); // 5 + 5 + 5√2
         assertEquals(expectedPerimeter, triangle.getPerimeter(), 0.0001);
     }
+    
+    @Test
+    public void Testsides() {
+        IsoscelesRightTriangle triangle = new IsoscelesRightTriangle(5);
+        assertEquals(3, triangle.numberOfSides(), 0.0001);
+    }
 }
