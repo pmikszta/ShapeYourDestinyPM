@@ -1,6 +1,6 @@
 package org.example;
 
-public class Square extends Rectangle implements Polygon {
+public class Square extends Rectangle  {
 
     // Constructor
     public Square(double side) {
@@ -20,9 +20,5 @@ public class Square extends Rectangle implements Polygon {
         super.setHeight(side);
     }
 
-    @Override
-    public int numberOfSides() {
-        return 4;
-    }
 
 }

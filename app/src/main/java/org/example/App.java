@@ -53,6 +53,7 @@ public class App {
         System.out.println("Radius: " + circle.getradius());
         System.out.println("Area: " + circle.getArea());
         System.out.println("Perimeter: " + circle.getPerimeter());
+        System.out.println("Number of Sides: " + circle.numberOfSides());
         System.out.println("\n------------------------------------- \n");
 
         //
