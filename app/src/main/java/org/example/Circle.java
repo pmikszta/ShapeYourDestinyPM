@@ -24,4 +24,11 @@ public class Circle extends Shape implements Polygon {
         return 0;
     }
 
+    //gettors and settors
+    public void setRadius(double radius) {
+         this.radius = radius;
+    }
+
+    public double getradius() { return radius; }
+
 }

@@ -10,16 +10,33 @@ public class RightTriangle extends Shape implements Polygon {
         this.height = height;
     }
 
-    //Overrides
+    // Public getters and setters
+    public double getBase() {
+        return base;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setBase(double base) {
+        this.base = base;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    //Overides
     @Override
     public double getArea() {
-         return 0.5 * base * height;
+        return 0.5 * base * height;
     }
 
     @Override
     public double getPerimeter() {
-         double hypotenuse = Math.sqrt(base * base + height * height);
-         return base + height + hypotenuse;
+        double hypotenuse = Math.sqrt(base * base + height * height);
+        return base + height + hypotenuse;
     }
 
     @Override
@@ -27,11 +44,5 @@ public class RightTriangle extends Shape implements Polygon {
         return 3;
     }
 
-    // Optional main method for testing
-    public static void main(String[] args) {
-        RightTriangle triangle = new RightTriangle(3, 4);
-         System.out.println("RightTriangle Area: " + triangle.getArea());
-         System.out.println("RightTriangle Perimeter: " + triangle.getPerimeter());
-    }
-    
+
 }

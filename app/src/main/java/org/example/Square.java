@@ -4,7 +4,7 @@ public class Square extends Rectangle implements Polygon {
 
     // Constructor
     public Square(double side) {
-        super(side, side); // Call Rectangle constructor with equal width and height
+        super(side, side); 
     }
 
     // Overrides
